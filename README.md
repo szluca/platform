@@ -1,4 +1,3 @@
-platform
-========
+# Fusepool P3 Platform
 
-Fusepool P3 Platform reference implementation
+Reference implementation of the [Fusepool P3](http://www.fusepool.eu/p3) Platform using [Apache Marmotta](http://marmotta.apache.org).

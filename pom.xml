@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.apache.marmotta</groupId>
+        <artifactId>marmotta-parent</artifactId>
+        <version>3.2.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>eu.fusepool.p3.platform</groupId>
+    <artifactId>platform</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Fusepool P3 Platform</name>
+    <description>Reference implementation, using Apache Marmotta, of the Fusepool P3 Platform</description>
+
+    <prerequisites>
+        <maven>3.0.3</maven>
+    </prerequisites>
+
+    <developers>
+        <developer>
+            <id>wikier</id>
+            <name>Sergio Fernández</name>
+            <email>wsergio.fernandez@salzburgresearch.at</email>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>dashboard</module>
+        <module>webapp</module>
+    </modules>
+
+</project>
