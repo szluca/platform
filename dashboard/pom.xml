@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.apache.marmotta</groupId>
+        <artifactId>marmotta-parent</artifactId>
+        <version>3.3.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>eu.fusepool.p3.platform</groupId>
+    <artifactId>dashboard</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Fusepool P3 Platform: Dashboard</name>
+    <description>Main module wrapping some other stuff</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.marmotta</groupId>
+            <artifactId>marmotta-core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.marmotta</groupId>
+            <artifactId>marmotta-sparql</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.marmotta</groupId>
+            <artifactId>marmotta-ldp</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
