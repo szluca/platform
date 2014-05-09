@@ -4,7 +4,7 @@ Reference implementation of the [Fusepool P3](http://www.fusepool.eu/p3) Platfor
 
 # Status
 
-Unstable, should not be used!
+Unstable, should not be used yet!
 
 # Usage
 
@@ -12,4 +12,4 @@ Unstable, should not be used!
     cd webapp
     mvn tomcat7:run
 
-and go to http://localhost:8080
+and go to [http://localhost:8080](http://localhost:8080)
