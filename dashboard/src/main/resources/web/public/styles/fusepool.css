@@ -1,0 +1,44 @@
+
+body {
+  background-color: #eeeeee;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+div#content {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+img {
+  border: 0;
+}
+
+a, a:active, a:visited {
+  color: #d43f76;
+}
+
+a:hover {
+  background-color: #d43f76;
+  color: #ffffff;
+}
+
+img#logo {
+  float: right;
+}
+
+footer {
+  margin-top: 5em;
+  padding-top: 0.1em;
+  min-height: 10em;
+  background-color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  font-size: 11px;
+}
+
