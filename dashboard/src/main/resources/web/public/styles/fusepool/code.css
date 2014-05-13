@@ -1,0 +1,32 @@
+pre.prettyprint {
+    color: #000;
+    white-space: normal !important;
+}
+
+pre.prettyprint .com {
+    color: #3f7f5f;
+}
+
+pre.prettyprint .lit {
+    color: #0000c0;
+}
+
+pre.prettyprint .str {
+    color: #2a00ff;
+}
+
+pre.prettyprint .typ {
+    color: #0000c0
+}
+
+pre.prettyprint .kwd {
+    color: #7f0055;
+}
+
+pre.prettyprint .pln {
+    color: #000;
+}
+
+pre.prettyprint .pun {
+    color: #444;
+}
