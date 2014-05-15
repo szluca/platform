@@ -1,3 +1,0 @@
-# TODO list
-
-* parent pom

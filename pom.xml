@@ -3,13 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apache.marmotta</groupId>
-        <artifactId>marmotta-parent</artifactId>
-        <version>3.3.0-SNAPSHOT</version>
+        <groupId>eu.fusepool.p3.platform</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>parent</relativePath>
     </parent>
 
     <groupId>eu.fusepool.p3.platform</groupId>
-    <artifactId>platform</artifactId>
+    <artifactId>reactor</artifactId>
     <packaging>pom</packaging>
 
     <name>Fusepool P3 Platform</name>
@@ -23,7 +24,7 @@
         <developer>
             <id>wikier</id>
             <name>Sergio Fernández</name>
-            <email>wsergio.fernandez@salzburgresearch.at</email>
+            <email>sergio.fernandez@salzburgresearch.at</email>
         </developer>
     </developers>
 
