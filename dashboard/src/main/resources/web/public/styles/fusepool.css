@@ -28,8 +28,24 @@ a:hover {
   color: #ffffff;
 }
 
-img#logo {
+h1 {
+  font-size: 2.8em;
+  display: block;
+  margin-bottom: -10px;
+}
+
+h1:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+h1 img#logo {
   float: right;
+  margin-top: -20px;
 }
 
 footer {
