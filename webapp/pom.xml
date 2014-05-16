@@ -18,10 +18,9 @@
     <description>Web Application bundle with the Fusepool P3 Platform</description>
 
     <properties>
-        <marmotta.home>${java.io.tmpdir}${file.separator}fusepoolp3</marmotta.home>
-        <marmotta.context>/</marmotta.context>
-        <marmotta.port>8080</marmotta.port>
-        <marmotta.backend>kiwi</marmotta.backend>
+        <fusepoolp3.home>${java.io.tmpdir}${file.separator}fusepoolp3</fusepoolp3.home>
+        <fusepoolp3.context>/</fusepoolp3.context>
+        <fusepoolp3.port>8080</fusepoolp3.port>
     </properties>
 
     <build>
@@ -59,10 +58,10 @@
                     <version>2.2</version>
                     <configuration>
                         <contextFile>src/main/webapp/META-INF/context.xml</contextFile>
-                        <path>${marmotta.context}</path>
-                        <port>${marmotta.port}</port>
+                        <path>${fusepoolp3.context}</path>
+                        <port>${fusepoolp3.port}</port>
                         <systemProperties>
-                            <marmotta.home>${marmotta.home}</marmotta.home>
+                            <marmotta.home>${fusepoolp3.home}</marmotta.home>
                         </systemProperties>
                         <!-- <contextReloadable>true</contextReloadable> -->
                         <!-- <backgroundProcessorDelay>10</backgroundProcessorDelay> -->
@@ -144,22 +143,23 @@
 
         <!-- JavaEE / Servlet / CDI Environment -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>org.jboss.weld.servlet</groupId>
             <artifactId>weld-servlet-core</artifactId>
+            <scope>runtime</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.el</groupId>
+                    <artifactId>el-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.jboss.spec.javax.el</groupId>
+                    <artifactId>jboss-el-api_3.0_spec</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.jboss.weld</groupId>
-            <artifactId>weld-core</artifactId>
+            <groupId>com.thetransactioncompany</groupId>
+            <artifactId>cors-filter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
@@ -168,10 +168,6 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.thetransactioncompany</groupId>
-            <artifactId>cors-filter</artifactId>
         </dependency>
 
     </dependencies>

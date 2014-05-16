@@ -13,7 +13,7 @@
     <artifactId>reactor</artifactId>
     <packaging>pom</packaging>
 
-    <name>Fusepool P3 Platform</name>
+    <name>Fusepool P3 Platform: Reactor</name>
     <description>Reference implementation, using Apache Marmotta, of the Fusepool P3 Platform</description>
 
     <prerequisites>
@@ -46,6 +46,7 @@
     </build>
 
     <modules>
+        <module>parent</module>
         <module>dashboard</module>
         <module>webapp</module>
     </modules>
