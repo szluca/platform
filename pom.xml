@@ -26,6 +26,11 @@
             <name>Sergio Fernández</name>
             <email>sergio.fernandez@salzburgresearch.at</email>
         </developer>
+        <developer>
+            <id>ja-fra</id>
+            <name>Jakob Frank</name>
+            <email>jakob.frank@salzburgresearch.at</email>
+        </developer>
     </developers>
 
     <build>
