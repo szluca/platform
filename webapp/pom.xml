@@ -67,6 +67,18 @@
                         <!-- <backgroundProcessorDelay>10</backgroundProcessorDelay> -->
                     </configuration>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <directory>${fusepoolp3.home}</directory>
+                                <followSymlinks>true</followSymlinks>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </plugin>
              </plugins>
         </pluginManagement>
         <resources>
