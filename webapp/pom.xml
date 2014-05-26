@@ -18,7 +18,7 @@
     <description>Web Application bundle with the Fusepool P3 Platform</description>
 
     <properties>
-        <fusepoolp3.home>${java.io.tmpdir}${file.separator}fusepoolp3</fusepoolp3.home>
+        <fusepoolp3.home>${project.build.directory}${file.separator}fusepoolp3</fusepoolp3.home>
         <fusepoolp3.context>/</fusepoolp3.context>
         <fusepoolp3.port>8080</fusepoolp3.port>
     </properties>
@@ -65,18 +65,6 @@
                         </systemProperties>
                         <!-- <contextReloadable>true</contextReloadable> -->
                         <!-- <backgroundProcessorDelay>10</backgroundProcessorDelay> -->
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-clean-plugin</artifactId>
-                    <version>2.5</version>
-                    <configuration>
-                        <filesets>
-                            <fileset>
-                                <directory>${fusepoolp3.home}</directory>
-                                <followSymlinks>true</followSymlinks>
-                            </fileset>
-                        </filesets>
                     </configuration>
                 </plugin>
              </plugins>
