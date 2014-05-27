@@ -76,12 +76,14 @@
                             <asWebapp>true</asWebapp> 
                         </webapp>
                         -->
+                        <!--
                         <webapp>
                             <groupId>eu.fusepool.p3.platform</groupId> 
                             <artifactId>marmotta</artifactId> 
                             <type>war</type>    
                             <asWebapp>true</asWebapp>
                         </webapp>
+                        -->
                         <webapp>
                             <groupId>eu.fusepool.p3.platform</groupId> 
                             <artifactId>stanbol</artifactId> 
@@ -100,7 +102,7 @@
         <module>proxy</module>
         <module>dashboard</module>
         <module>marmotta</module>
-        <module>stanbol</module>
+        <!--<module>stanbol</module>-->
     </modules>
 
 </project>
