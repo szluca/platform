@@ -41,6 +41,9 @@
 
     <properties>
         <marmotta.version>3.2.0</marmotta.version>
+        <fusepoolp3.marmotta.port>8081</fusepoolp3.marmotta.port>
+        <fusepoolp3.marmotta.home>${project.build.directory}${file.separator}fusepoolp3</fusepoolp3.marmotta.home>
+        <fusepoolp3.marmotta.context>/marmotta</fusepoolp3.marmotta.context>
     </properties>
 
     <repositories>
@@ -90,6 +93,11 @@
                             <exclude>**/test/**</exclude>
                         </excludes>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
                 </plugin>
             </plugins>
         </pluginManagement>

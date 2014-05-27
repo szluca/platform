@@ -64,6 +64,28 @@
                     <skip>true</skip>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <webapps> 
+                        <!--
+                        <webapp> 
+                            <groupId>eu.fusepool</groupId> 
+                            <artifactId>proxy</artifactId> 
+                            <type>war</type>    
+                            <asWebapp>true</asWebapp> 
+                        </webapp> 
+                        -->
+                        <webapp> 
+                            <groupId>eu.fusepool.p3.platform</groupId> 
+                            <artifactId>marmotta</artifactId> 
+                            <type>war</type>    
+                            <asWebapp>true</asWebapp>
+                        </webapp> 
+                    </webapps>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -72,7 +94,7 @@
         <module>extractor</module>
         <module>proxy</module>
         <module>dashboard</module>
-        <module>webapp</module>
+        <module>marmotta</module>
     </modules>
 
 </project>

@@ -28,17 +28,11 @@
     </parent>
 
     <groupId>eu.fusepool.p3.platform</groupId>
-    <artifactId>webapp</artifactId>
+    <artifactId>marmotta</artifactId>
     <packaging>war</packaging>
 
-    <name>Fusepool P3 Platform: Web Application</name>
+    <name>Fusepool P3 Platform: Marmotta Web Application</name>
     <description>Web Application bundle with the Fusepool P3 Platform</description>
-
-    <properties>
-        <fusepoolp3.home>${project.build.directory}${file.separator}fusepoolp3</fusepoolp3.home>
-        <fusepoolp3.context>/</fusepoolp3.context>
-        <fusepoolp3.port>8080</fusepoolp3.port>
-    </properties>
 
     <build>
         <finalName>fusepoolp3</finalName>
@@ -72,16 +66,13 @@
                  <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>2.2</version>
                     <configuration>
                         <contextFile>src/main/webapp/META-INF/context.xml</contextFile>
-                        <path>${fusepoolp3.context}</path>
+                        <path>${fusepoolp3.marmotta.context}</path>
                         <port>${fusepoolp3.port}</port>
                         <systemProperties>
-                            <marmotta.home>${fusepoolp3.home}</marmotta.home>
+                            <marmotta.home>${fusepoolp3.marmotta.home}</marmotta.home>
                         </systemProperties>
-                        <!-- <contextReloadable>true</contextReloadable> -->
-                        <!-- <backgroundProcessorDelay>10</backgroundProcessorDelay> -->
                     </configuration>
                 </plugin>
              </plugins>
