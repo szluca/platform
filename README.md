@@ -12,7 +12,6 @@ Continous Integration kindly provided by [Travis CI](http://travis-ci.org):
 # Usage
 
     mvn clean install
-    cd webapp
     mvn tomcat7:run
 
-and go to [http://localhost:8080](http://localhost:8080)
+and go to [http://localhost:8080](http://localhost:8080/marmotta)
