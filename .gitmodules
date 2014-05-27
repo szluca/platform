@@ -1,0 +1,6 @@
+[submodule "proxy"]
+	path = proxy
+	url = git@github.com:fusepoolP3/p3-proxy.git
+[submodule "extractor"]
+	path = extractor
+	url = https://github.com/fusepoolP3/p3-extractor-library
