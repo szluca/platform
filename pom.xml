@@ -31,7 +31,7 @@
     <packaging>pom</packaging>
 
     <name>Fusepool P3 Platform: Reactor</name>
-    <description>Reference implementation, using Apache Marmotta, of the Fusepool P3 Platform</description>
+    <description>Reference implementation of the Fusepool P3 Platform</description>
 
     <prerequisites>
         <maven>3.0.3</maven>

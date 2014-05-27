@@ -34,6 +34,11 @@
     <name>Fusepool P3 Platform: Marmotta Web Application</name>
     <description>Web Application bundle with the reference Fusepool P3 Platform implementation based on Marmotta</description>
 
+    <properties>
+        <fusepoolp3.marmotta.context>/</fusepoolp3.marmotta.context>
+        <fusepoolp3.marmotta.home>${project.build.directory}${file.separator}fusepoolp3</fusepoolp3.marmotta.home>
+    </properties>
+
     <build>
         <finalName>marmotta</finalName>
         <pluginManagement>
@@ -68,8 +73,8 @@
                     <artifactId>tomcat7-maven-plugin</artifactId>
                     <configuration>
                         <contextFile>src/main/webapp/META-INF/context.xml</contextFile>
-                        <path>${fusepoolp3.marmotta.context}</path>
                         <port>${fusepoolp3.port}</port>
+                        <path>${fusepoolp3.marmotta.context}</path>
                         <systemProperties>
                             <marmotta.home>${fusepoolp3.marmotta.home}</marmotta.home>
                         </systemProperties>

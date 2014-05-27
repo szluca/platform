@@ -41,9 +41,7 @@
 
     <properties>
         <marmotta.version>3.2.0</marmotta.version>
-        <fusepoolp3.marmotta.port>8081</fusepoolp3.marmotta.port>
-        <fusepoolp3.marmotta.home>${project.build.directory}${file.separator}fusepoolp3</fusepoolp3.marmotta.home>
-        <fusepoolp3.marmotta.context>/marmotta</fusepoolp3.marmotta.context>
+        <fusepoolp3.port>8080</fusepoolp3.port>
     </properties>
 
     <repositories>
