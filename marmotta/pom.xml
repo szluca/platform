@@ -32,10 +32,10 @@
     <packaging>war</packaging>
 
     <name>Fusepool P3 Platform: Marmotta Web Application</name>
-    <description>Web Application bundle with the Fusepool P3 Platform</description>
+    <description>Web Application bundle with the reference Fusepool P3 Platform implementation based on Marmotta</description>
 
     <build>
-        <finalName>fusepoolp3</finalName>
+        <finalName>marmotta</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>

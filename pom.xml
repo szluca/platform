@@ -81,6 +81,12 @@
                             <type>war</type>    
                             <asWebapp>true</asWebapp>
                         </webapp> 
+                        <webapp> 
+                            <groupId>eu.fusepool.p3.platform</groupId> 
+                            <artifactId>stanbol</artifactId> 
+                            <type>war</type>    
+                            <asWebapp>true</asWebapp>
+                        </webapp> 
                     </webapps>
                 </configuration>
             </plugin>
@@ -93,6 +99,7 @@
         <module>proxy</module>
         <module>dashboard</module>
         <module>marmotta</module>
+        <module>stanbol</module>
     </modules>
 
 </project>
