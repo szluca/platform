@@ -27,7 +27,7 @@
     </parent>
     -->
 
-    <groupId>eu.fusepool.p3.platform</groupId>
+    <groupId>eu.fusepool.p3</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>

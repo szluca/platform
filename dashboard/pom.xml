@@ -20,13 +20,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.fusepool.p3.platform</groupId>
+        <groupId>eu.fusepool.p3</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../parent</relativePath>
     </parent>
 
-    <groupId>eu.fusepool.p3.platform</groupId>
     <artifactId>dashboard</artifactId>
     <packaging>jar</packaging>
 

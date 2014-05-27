@@ -20,14 +20,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.fusepool.p3.platform</groupId>
+        <groupId>eu.fusepool.p3</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>parent</relativePath>
     </parent>
 
-    <groupId>eu.fusepool.p3.platform</groupId>
-    <artifactId>reactor</artifactId>
+    <artifactId>platform</artifactId>
     <packaging>pom</packaging>
 
     <name>Fusepool P3 Platform: Reactor</name>
