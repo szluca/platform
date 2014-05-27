@@ -69,14 +69,12 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <webapps> 
-                        <!--
                         <webapp> 
                             <groupId>eu.fusepool</groupId> 
                             <artifactId>proxy</artifactId> 
-                            <type>war</type>    
+                            <type>jar</type>    
                             <asWebapp>true</asWebapp> 
                         </webapp> 
-                        -->
                         <webapp> 
                             <groupId>eu.fusepool.p3.platform</groupId> 
                             <artifactId>marmotta</artifactId> 
