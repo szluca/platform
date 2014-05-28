@@ -4,10 +4,9 @@ Reference implementation of the [Fusepool P3](http://www.fusepool.eu/p3) Platfor
 
 # Status
 
-Unstable, **should not be used yet**!
+[![Build Status](https://secure.travis-ci.org/fusepoolP3/platform.svg?branch=master)](https://travis-ci.org/fusepoolP3/platform)
 
-Continous Integration kindly provided by [Travis CI](http://travis-ci.org): 
-[http://travis-ci.org/fusepoolP3/platform](https://travis-ci.org/fusepoolP3/platform)
+Unstable, **should not be used yet**!
 
 # Usage
 
