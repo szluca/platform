@@ -78,6 +78,7 @@
                         <header>src/etc/header.txt</header>
                         <strictCheck>true</strictCheck>
                         <excludes>
+                            <exclude>LICENSE</exclude>
                             <exclude>COPYING.txt</exclude>
                             <exclude>NOTICE.txt</exclude>
                             <exclude>README.txt</exclude>
