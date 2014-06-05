@@ -26,17 +26,20 @@ log "Successfully compiled platform source code" info
 
 log "Starting marmotta backend...." debug
 exec "mvn tomcat7:run" "marmotta"
-sleep 5
-log "Applying custom configurations...." debug
-config "kiwi.context" $PROXY_URL
-config "kiwi.host" $MARMOTTA_URL
-config "kiwi.setup.host" "true"
-config "ldp.force_uri" "true"
+sleep 10
 log "Marmotta backend started at $MARMOTTA_URL" info
 
 log "Starting proxy...." debug
 exec "mvn exec:java -DskipTests" "proxy"
 log "LDP Extraction proxy started at $PROXY_URL" debug
+
+log "Applying custom configurations...." debug
+config "kiwi.context" $PROXY_URL
+config "kiwi.host" $MARMOTTA_URL
+config "kiwi.setup.host" "true"
+config "ldp.force_uri" "true"
+
+log "Successfully started Fusepool P3 platform!" info
 
 T2=$(date +%s.%N)
 dt=$(echo "$T2 - $T1" | bc)
