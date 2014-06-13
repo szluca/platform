@@ -13,8 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-
 
 . lib.sh
 
@@ -26,19 +24,13 @@ log "Successfully compiled platform source code" info
 
 log "Starting marmotta backend...." debug
 exec "mvn tomcat7:run" "marmotta"
-sleep 10
+sleep 5
 log "Marmotta backend started at $MARMOTTA_URL" info
 
 log "Starting proxy...." debug
 exec "mvn exec:java -DskipTests" "proxy"
+sleep 5
 log "LDP Extraction proxy started at $PROXY_URL" debug
-
-log "Applying custom configurations...." debug
-config "kiwi.context" $PROXY_URL
-config "kiwi.host" $MARMOTTA_URL
-config "kiwi.setup.host" "true"
-config "ldp.force_uri" "true"
-
 log "Successfully started Fusepool P3 platform!" info
 
 T2=$(date +%s.%N)
