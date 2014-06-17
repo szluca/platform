@@ -18,11 +18,13 @@
 
 BUILD_DIR='target'
 MARMOTTA_URL='http://localhost:8080'
+STANBOL_URL='http://localhost:8081'
 PROXY_URL='http://localhost:8181'
 CURL_OPTS="${CURL_OPTS:-"-sfS"}"
 
 function init() {
   set +x
+  export MAVEN_OPTS="-Xmx2G -XX:MaxPermSize=512M"
   mvn -q clean install -DskipTests
   mkdir -p $BUILD_DIR
   rm -f $BUILD_DIR/*.pid
