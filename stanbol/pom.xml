@@ -34,6 +34,12 @@
   <name>Fusepool P3 Platform: Stanbol Web Application</name>
   <description>Custom Stanbol WAR launcher</description>
 
+  <properties>
+    <fusepoolp3.stanbol.context>/</fusepoolp3.stanbol.context>
+    <fusepoolp3.stanbol.port>8081</fusepoolp3.stanbol.port>
+    <fusepoolp3.stanbol.home>${project.build.directory}${file.separator}stanbol</fusepoolp3.stanbol.home>
+  </properties>
+
   <build>
     <finalName>stanbol</finalName>
     <plugins>
@@ -57,20 +63,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <!-- make the generated jar runnable -->
-              <addClasspath>true</addClasspath>
-              <mainClass>org.apache.sling.launchpad.app.Main</mainClass>
-              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-            </manifest>
-          </archive>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -105,8 +97,13 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-          <path>/stanbol</path>
-          <port>8081</port>
+          <path>${fusepoolp3.stanbol.context}</path>
+          <port>${fusepoolp3.stanbol.port}</port>
+          <systemProperties>
+            <sling.home>${fusepoolp3.stanbol.home}</sling.home>
+          </systemProperties>
+          <addWarDependenciesInClassloader>true</addWarDependenciesInClassloader>
+          <warSourceDirectory>${project.build.directory}/${project.build.finalName}/</warSourceDirectory>
         </configuration>
       </plugin>
     </plugins>
