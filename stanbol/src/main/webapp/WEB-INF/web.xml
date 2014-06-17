@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>Stanbol Fusepool P3 WAR Launcher</display-name>
+
+	<!-- The Felix Http Service Listener Proxy for HTTP Session events -->
+	<listener>
+		<listener-class>
+			org.apache.sling.launchpad.webapp.SlingSessionListener
+		</listener-class>
+	</listener>
+
+	<servlet>
+		<display-name>Sling Servlet</display-name>
+		<servlet-name>sling</servlet-name>
+		<servlet-class>org.apache.sling.launchpad.webapp.SlingServlet</servlet-class>
+        <init-param> <!-- the initial framework startlevel -->
+                <param-name>org.osgi.framework.startlevel.beginning</param-name> 
+                <param-value>40</param-value> 
+        </init-param> 
+		<init-param> <!-- the default sling.home is set to stanbol -->
+                <param-name>sling.home</param-name> 
+                <param-value>stanbol/</param-value> 
+        </init-param> 
+        <init-param> <!-- set the stanbol.home to the sling.home -->
+                <param-name>stanbol.home</param-name> 
+                <param-value>${sling.home}</param-value> 
+        </init-param> 
+        <init-param> <!-- set the sling file installer dir to {working-dir}/stanbol/fileinstall -->
+                <param-name>sling.fileinstall.dir</param-name>
+                <param-value>${sling.home}/fileinstall</param-value>
+        </init-param>
+        <load-on-startup>100</load-on-startup>
+    </servlet>
+
+	<!-- Default Mapping for the Context -->
+	<servlet-mapping>
+		<servlet-name>sling</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
