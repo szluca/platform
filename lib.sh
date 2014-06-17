@@ -24,7 +24,7 @@ CURL_OPTS="${CURL_OPTS:-"-sfS"}"
 
 function init() {
   set +x
-  export MAVEN_OPTS="-Xmx2G -XX:MaxPermSize=512M"
+  export MAVEN_OPTS="-Xmx2g -XX:MaxPermSize=512m"
   mvn -q clean install -DskipTests
   mkdir -p $BUILD_DIR
   rm -f $BUILD_DIR/*.pid
