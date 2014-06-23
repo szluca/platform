@@ -23,15 +23,15 @@ init
 log "Successfully compiled platform source code" info
 
 log "Starting marmotta backend...." debug
-exec "mvn tomcat7:run" "marmotta"
+exec "mvn tomcat7:run" "marmotta" "backends/marmotta/webapp/"
 log "Marmotta backend started at $MARMOTTA_URL" info
 
 log "Starting stanbol worker...." debug
-exec "mvn package tomcat7:run" "stanbol"
+exec "mvn package tomcat7:run" "stanbol" "workers/stanbol/"
 log "Stanbol worker started at $STANBOL_URL" info
 
 log "Starting proxy...." debug
-exec "mvn exec:java -DskipTests" "proxy"
+exec "mvn exec:java -DskipTests" "proxy" "proxy/"
 log "LDP Extraction proxy started at $PROXY_URL" debug
 log "Successfully started Fusepool P3 platform!" info
 

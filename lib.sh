@@ -68,12 +68,15 @@ config() {
 }
 
 function exec() {
-  local CMD NAME
+  local CMD NAME DIR
   CMD=$1
   NAME=$2
-  cd $NAME
+  DIR=$3
+  N=$(grep -o "/" <<< "$DIR" | wc -l)
+  BACK_DIR=`echo $(for i in $(seq 1 $N); do printf "../"; done)`
+  cd $DIR
   echo $CMD
-  $CMD >../$BUILD_DIR/$NAME.log 2>../$BUILD_DIR/$NAME.log & echo $! > ../$BUILD_DIR/$NAME.pid
-  cd ..
+  $CMD >$BACK_DIR$BUILD_DIR/$NAME.log 2>$BACK_PATH$BUILD_DIR/$NAME.log & echo $! > $BACK_DIR$BUILD_DIR/$NAME.pid
+  cd $BACK_DIR
 }
 
