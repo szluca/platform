@@ -23,36 +23,13 @@
         <groupId>eu.fusepool.p3</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>parent</relativePath>
+        <relativePath>../parent</relativePath>
     </parent>
 
-    <artifactId>platform</artifactId>
+    <artifactId>workers</artifactId>
     <packaging>pom</packaging>
 
-    <name>Fusepool P3 Platform: Reactor</name>
-    <description>Reference implementation of the Fusepool P3 Platform</description>
-
-    <prerequisites>
-        <maven>3.0.3</maven>
-    </prerequisites>
-
-    <developers>
-        <developer>
-            <id>wikier</id>
-            <name>Sergio Fernández</name>
-            <email>sergio.fernandez@salzburgresearch.at</email>
-        </developer>
-        <developer>
-            <id>ja-fra</id>
-            <name>Jakob Frank</name>
-            <email>jakob.frank@salzburgresearch.at</email>
-        </developer>
-        <developer>
-            <id>reto</id>
-            <name>Reto Gmür</name>
-            <email>reto.bachmann-gmuer@fusepool.net</email>
-        </developer>
-    </developers>
+    <name>Fusepool P3 Platform: Workers' Reactor</name>
 
     <build>
         <plugins>
@@ -72,11 +49,7 @@
     </build>
 
     <modules>
-        <module>parent</module>
-        <module>extractor</module>
-        <module>proxy</module>
-        <module>workers</module>
-        <module>backends</module>
+        <module>stanbol</module>
     </modules>
 
 </project>

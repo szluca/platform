@@ -27,7 +27,7 @@
         <relativePath>../parent</relativePath>
     </parent>
 
-    <artifactId>marmotta</artifactId>
+    <artifactId>marmotta-webapp</artifactId>
     <packaging>war</packaging>
 
     <name>Fusepool P3 Platform: Marmotta Web Application</name>

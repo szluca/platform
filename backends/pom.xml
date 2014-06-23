@@ -26,29 +26,30 @@
         <relativePath>../parent</relativePath>
     </parent>
 
-    <artifactId>dashboard</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>backends</artifactId>
+    <packaging>pom</packaging>
 
-    <name>Fusepool P3 Platform: Dashboard</name>
-    <description>Main module wrapping some other stuff</description>
+    <name>Fusepool P3 Platform: Backends' Reactor</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.marmotta</groupId>
-            <artifactId>marmotta-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.marmotta</groupId>
-            <artifactId>marmotta-ldp</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.marmotta</groupId>
-            <artifactId>marmotta-sparql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.marmotta</groupId>
-            <artifactId>marmotta-ldpath</artifactId>
-        </dependency>
-    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>marmotta</module>
+    </modules>
 
 </project>
