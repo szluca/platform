@@ -109,6 +109,19 @@
     </plugins>
   </build>
 
+  <repositories>
+    <repository>
+      <id>apache.releases</id>
+      <name>Apache Relesases Repository</name>
+      <url>https://repository.apache.org/content/repositories/releases/</url>
+    </repository>
+    <repository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshots Repository</name>
+      <url>https://repository.apache.org/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>org.apache.sling</groupId>
