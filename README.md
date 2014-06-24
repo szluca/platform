@@ -1,16 +1,21 @@
 # Fusepool P3 Platform
 
-Reference implementation of the [Fusepool P3](http://www.fusepool.eu/p3) Platform using [Apache Marmotta](http://marmotta.apache.org).
+Reference implementation of the [Fusepool P3](http://p3.fusepool.eu) Platform based on [Apache Marmotta](http://marmotta.apache.org).
 
-# Status
+## Status
 
 [![Build Status](https://secure.travis-ci.org/fusepoolP3/platform.svg?branch=master)](https://travis-ci.org/fusepoolP3/platform)
 
-Unstable, **should not be used yet**!
+The platform is still in alpha, so you can use it under your own risk.
 
-# Usage
+## Usage
 
-    mvn clean install
-    mvn tomcat7:run
+Start:
 
-and go to [http://localhost:8080](http://localhost:8080/marmotta)
+    ./start.sh
+
+and go to [localhost:8181](http://localhost:8181/)
+
+Stop:
+
+    ./stop.sh
