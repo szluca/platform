@@ -29,7 +29,7 @@
 
     <groupId>eu.fusepool.p3</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Fusepool P3 Platform: Parent</name>
@@ -40,8 +40,7 @@
     </prerequisites>
 
     <properties>
-        <marmotta.version>3.2.0</marmotta.version>
-        <fusepoolp3.port>8080</fusepoolp3.port>
+        <marmotta.version>3.2.1</marmotta.version>
     </properties>
 
     <repositories>

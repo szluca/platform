@@ -28,7 +28,7 @@
 
   <groupId>eu.fusepool.p3</groupId>
   <artifactId>stanbol</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>Fusepool P3 Platform: Stanbol Web Application</name>
