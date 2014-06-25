@@ -1,6 +1,6 @@
-# Fusepool P3 Platform
-
 ![Fusepool P3](https://raw.githubusercontent.com/fusepoolP3/platform/master/backends/marmotta/dashboard/src/main/resources/web/public/images/fusepool.png)
+
+# Fusepool P3 Platform
 
 Reference implementation of the [Fusepool P3](http://p3.fusepool.eu) Platform based on [Apache Marmotta](http://marmotta.apache.org).
 
